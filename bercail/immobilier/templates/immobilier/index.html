@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'immobilier/bercail.css' %}" rel="stylesheet">
+    <title>bercail</title>
+</head>
+<body>
+    <div id="app">
+        <div class="row small-margin">
+            <!-- ___________________________________________________________ Entête -->
+            <div class="container">
+                 <div><img src="{% static 'immobilier/logo.png' %}" height="160px"/></div>
+                 <div>
+                     <nav>
+                        <ul class="position">
+                           <li>ACHETER</li>
+                           <li>VENDRE</li>
+                           <li>LOUER</li>
+                           <li>PRODUITS ET SERVICES</li>
+                           <li>CONTACTS</li>
+                        </ul>
+                     </nav>
+                 </div>
+            </div>
+            </div>
+            <!--__________________________________________________________sous-Entête-->
+            <div id="f1">
+                <div class="container-fo">
+                    <div class="header">
+                        <h2>Je recherche</h2>
+                    </div>
+                    <div>
+                    <form class="form">
+                        <div class="form-control">
+                        <input type="text" placeholder="Ville, départment, CP" id="city">
+                        </div>
+                        <div class="form-control">
+                        <select class="form-select">
+                                <option selected>Type de bien</option>
+                                <option value="1">Appartement</option>
+                                <option value="2">Maison</option>
+                                <option value="3">Terain</option>
+                          </select>
+                        </div>
+                        <div class="form-control">
+                        <select class="form-select">
+                                <option selected>Nb de pièces</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                          </select>
+                        <input type="select" placeholder="Nb de pièces" id="nb_pièce">
+                        </div>
+                        <div class="form-control">
+                        <input type="text" placeholder="Budget max" id="budget_m">
+                        </div>
+                    </form>
+                    </div>
+                    <div>
+                        <button>Rechercher</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
